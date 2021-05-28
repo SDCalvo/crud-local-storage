@@ -14,3 +14,8 @@ th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+.logo-img {
+    height: 150px !important;
+    width: 150px !important;
+}
