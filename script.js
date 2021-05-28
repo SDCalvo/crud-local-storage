@@ -2,7 +2,7 @@ let songs = [];
 
 let entryIndex = 0;
 
-songs = JSON.parse(localStorage.getItem("songs"));
+songs = (JSON.parse(localStorage.getItem("songs")) || []);
 
 function listarCanciones() {
 
@@ -11,6 +11,7 @@ function listarCanciones() {
     let cont = document.getElementById("canciones");
     cont.innerHTML = "";
 
+    console.log(songs)
     songs.forEach((item, index) => {
 
         cont.innerHTML += `
@@ -34,6 +35,20 @@ function agregarCancion() {
     const band = document.querySelector("#Banda").value;
     const year = document.querySelector("#Año").value;
 
+    if (name == null || name == undefined || name == "") {
+
+        alert("Nombre invalido");
+        return;
+    } else if (band == null || band == undefined || band == "") {
+
+        alert("Banda invalida");
+        return;
+    } else if (year == null || year == undefined || year == "") {
+
+        alert("Año invalida");
+        return;
+    }
+
     songs.push({
 
         name: name,
@@ -55,6 +70,20 @@ function editarCancion() {
     const name = document.querySelector("#NombreEdit").value;
     const band = document.querySelector("#BandaEdit").value;
     const year = document.querySelector("#AñoEdit").value;
+
+    if (name == null || name == undefined || name == "") {
+
+        alert("Nombre invalido");
+        return;
+    } else if (band == null || band == undefined || band == "") {
+
+        alert("Banda invalida");
+        return;
+    } else if (year == null || year == undefined || year == "") {
+
+        alert("Año invalida");
+        return;
+    }
 
     songs[entryIndex] = {
 
