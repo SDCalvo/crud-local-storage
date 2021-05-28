@@ -19,3 +19,8 @@ tr:nth-child(even) {
     height: 150px !important;
     width: 150px !important;
 }
+
+.table-text {
+    text-align: center;
+    vertical-align: middle;
+}

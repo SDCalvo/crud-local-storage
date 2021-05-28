@@ -16,10 +16,10 @@ function listarCanciones() {
 
         cont.innerHTML += `
         <tr>
-            <th scope="row">${index}</th>
-            <td>${item.name}</td>
-            <td>${item.band}</td>
-            <td>${item.year}</td>
+            <th class="table-text" scope="row">${index}</th>
+            <td class="table-text">${item.name}</td>
+            <td class="table-text">${item.band}</td>
+            <td class="table-text">${item.year}</td>
             <td><img class="logo-img" src="${item.img}" alt=""></td>
             <td>
                 <button type="button" class="ms-2 btn btn-primary" data-bs-toggle="modal" onclick="updateIndex(${index})" data-bs-target="#editSong">
