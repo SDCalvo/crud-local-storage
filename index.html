@@ -31,16 +31,15 @@
             </tr>
         </thead>
         <tbody id="canciones">
+
         </tbody>
     </table>
 
     <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <input id="searchInput" class=" m-4 form-control w-50 me-2" placeholder="Search" aria-label="Search">
-            <button id="searchBtn" class=" m-4 w-25 btn btn-outline-success">Search</button>
-        </div>
-        <div id="searchResult">
-
+        <div class="row justify-content-between align-items-center">
+            <input id="searchInput" class="col-5 my-4 form-control w-50" placeholder="Search" aria-label="Search">
+            <button id="searchBtn" class="col-2 my-4 btn btn-success">Buscar</button>
+            <button onClick="listarCanciones()" class="col-2 my-4 btn btn-warning">Limpiar</button>
         </div>
     </div>
 
@@ -77,8 +76,8 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onclick="agregarCancion()">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" onclick="agregarCancion()">Guardar cambios</button>
                 </div>
             </div>
         </div>
@@ -112,8 +111,8 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onclick="editarCancion()">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" onclick="editarCancion()">Guardar cambios</button>
                 </div>
             </div>
         </div>

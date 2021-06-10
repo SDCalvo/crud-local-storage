@@ -33,3 +33,7 @@ tr:nth-child(even) {
 .searchMargin {
     margin: 50px 0px;
 }
+
+.btnH {
+    height: 150.5px !important;
+}
